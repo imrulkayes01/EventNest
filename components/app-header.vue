@@ -8,7 +8,7 @@
         class="flex items-center gap-2 text-2xl font-[700] cursor-pointer text-white tracking-tight"
       >
         <span>
-          <span class="text-[#22c55e]"
+          <span class="text-[#07B300]"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -54,7 +54,7 @@
           Log In
         </button>
         <button
-          class="bg-[#22c55e] hover:bg-[#16a34a] transition px-5 py-2.5 text-black rounded-[0.50rem] font-bold text-sm"
+          class="bg-[#07B300] hover:bg-[#16a34a] transition px-5 py-2.5 text-black rounded-[0.50rem] font-bold text-sm"
         >
           Get Started
         </button>
@@ -99,10 +99,11 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-x"
+          class="lucide lucide-x size-4"
+          aria-hidden="true"
         >
-          <path d="M18 6 6 18" />
-          <path d="m6 6 18 12" />
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
         </svg>
       </button>
       <ul class="flex flex-col items-center gap-6 text-xl text-gray-300">
