@@ -1,0 +1,74 @@
+[
+  {
+    "id": "payment",
+    "name": "Payment Processing",
+    "description": "Secure payment processing with Stripe",
+    "icon": "payment",
+    "features": [
+      "Accept credit cards, Apple Pay, Google Pay",
+      "Automatic currency conversion",
+      "PCI-DSS compliant security",
+      "Instant payouts to your account"
+    ]
+  },
+  {
+    "id": "analytics",
+    "name": "Analytics & Insights",
+    "description": "Real-time data and reporting",
+    "icon": "analytics",
+    "features": [
+      "Live sales dashboards",
+      "Attendee demographics",
+      "Revenue forecasting",
+      "Custom report builder"
+    ]
+  },
+  {
+    "id": "email",
+    "name": "Email Marketing",
+    "description": "Automated email campaigns",
+    "icon": "email",
+    "features": [
+      "Customizable email templates",
+      "Automated reminders & follow-ups",
+      "A/B testing campaigns",
+      "Delivery analytics"
+    ]
+  },
+  {
+    "id": "calendar",
+    "name": "Calendar Sync",
+    "description": "Seamless calendar integration",
+    "icon": "calendar",
+    "features": [
+      "Google Calendar sync",
+      "Outlook integration",
+      "Apple Calendar support",
+      "Automatic event reminders"
+    ]
+  },
+  {
+    "id": "messaging",
+    "name": "Messaging & SMS",
+    "description": "Direct attendee communication",
+    "icon": "messaging",
+    "features": [
+      "SMS notifications",
+      "In-app messaging",
+      "Automated updates",
+      "Emergency broadcasts"
+    ]
+  },
+  {
+    "id": "streaming",
+    "name": "Live Streaming",
+    "description": "Virtual & hybrid event support",
+    "icon": "streaming",
+    "features": [
+      "YouTube Live integration",
+      "Zoom connectivity",
+      "Custom RTMP streaming",
+      "Recording & playback"
+    ]
+  }
+]

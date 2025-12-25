@@ -50,22 +50,22 @@
 
         <!-- Search Bar -->
         <div
-          class="w-full max-w-3xl bg-white/5 border border-white/10 rounded-2xl p-2 flex flex-col md:flex-row gap-2 backdrop-blur-sm mb-12 animate-fade-in-up delay-300"
+          class="w-full max-w-3xl bg-[#0A0A0A] border border-white/10 rounded-2xl p-2 flex flex-col md:flex-row gap-2 backdrop-blur-sm mb-12 animate-fade-in-up delay-300"
         >
           <div
-            class="flex-1 flex items-center px-4 h-12 border-b md:border-b-0 md:border-r border-white/10"
+            class="flex-1 flex items-center px-4 h-14 border-b md:border-b-0 md:border-r border-white/10"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="text-gray-400 mr-3"
+              class="text-white/40 mr-3"
             >
               <circle cx="11" cy="11" r="8" />
               <path d="m21 21-4.3-4.3" />
@@ -73,21 +73,21 @@
             <input
               type="text"
               placeholder="Search events, concerts, conferences..."
-              class="bg-transparent w-full text-white placeholder-gray-500 focus:outline-none"
+              class="bg-transparent w-full text-white placeholder-white/30 focus:outline-none font-medium"
             />
           </div>
-          <div class="flex-1 flex items-center px-4 h-12">
+          <div class="flex-1 flex items-center px-4 h-14">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="text-gray-400 mr-3"
+              class="text-white/40 mr-3"
             >
               <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
               <circle cx="12" cy="10" r="3" />
@@ -95,11 +95,11 @@
             <input
               type="text"
               placeholder="Location"
-              class="bg-transparent w-full text-white placeholder-gray-500 focus:outline-none"
+              class="bg-transparent w-full text-white placeholder-white/30 focus:outline-none font-medium"
             />
           </div>
           <button
-            class="bg-[#07B300] hover:bg-[#16a34a] text-black font-semibold px-8 py-3 rounded-[0.50rem] transition-colors h-12 md:h-auto flex items-center justify-center gap-2"
+            class="bg-[#07B300] hover:bg-[#16a34a] text-black font-bold px-8 py-3 rounded-xl transition-colors h-14 md:h-auto flex items-center justify-center gap-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,7 @@
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
+              stroke-width="2.5"
               stroke-linecap="round"
               stroke-linejoin="round"
             >
@@ -124,7 +124,7 @@
           class="flex flex-wrap gap-4 justify-center mb-16 animate-fade-in-up delay-400"
         >
           <button
-            class="bg-[#07B300] hover:bg-[#16a34a] text-black font-semibold px-8 py-3.5 rounded-[0.50rem] transition-all hover:scale-105 flex items-center gap-2"
+            class="bg-[#07B300] hover:bg-[#16a34a] text-black font-bold px-8 py-4 rounded-xl transition-all hover:scale-105 flex items-center gap-2 text-lg"
           >
             Explore Events
             <svg
@@ -134,7 +134,7 @@
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
+              stroke-width="2.5"
               stroke-linecap="round"
               stroke-linejoin="round"
             >
@@ -143,7 +143,7 @@
             </svg>
           </button>
           <button
-            class="bg-transparent border border-white/20 hover:bg-[#22c55e]/20 text-white font-semibold px-8 py-3.5 rounded-[0.50rem] transition-all flex items-center gap-2"
+            class="bg-transparent border-2 border-white/10 hover:bg-white/5 text-white font-bold px-8 py-4 rounded-xl transition-all flex items-center gap-3 text-lg"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -152,14 +152,14 @@
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
+              stroke-width="2.5"
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <path
-                d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
-              />
-              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+              <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+              <line x1="16" x2="16" y1="2" y2="6" />
+              <line x1="8" x2="8" y1="2" y2="6" />
+              <line x1="3" x2="21" y1="10" y2="10" />
             </svg>
             Create Your Event
           </button>
@@ -173,7 +173,7 @@
             <div
               class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#07B300] mb-2"
             >
-              10K+
+              <count-up end="10" suffix="K+" />
             </div>
             <div class="text-gray-400 text-sm font-medium">Events Hosted</div>
           </div>
@@ -181,7 +181,7 @@
             <div
               class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#07B300] mb-2"
             >
-              500K+
+              <count-up end="500" suffix="K+" />
             </div>
             <div class="text-gray-400 text-sm font-medium">Tickets Sold</div>
           </div>
@@ -189,7 +189,7 @@
             <div
               class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#07B300] mb-2"
             >
-              50K+
+              <count-up end="50" suffix="K+" />
             </div>
             <div class="text-gray-400 text-sm font-medium">Organizers</div>
           </div>
@@ -197,7 +197,7 @@
             <div
               class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#07B300] mb-2"
             >
-              99.9%
+              <count-up end="99.9" suffix="%" :decimals="1" />
             </div>
             <div class="text-gray-400 text-sm font-medium">Uptime</div>
           </div>
@@ -623,7 +623,9 @@
                 />
               </svg>
             </div>
-            <div class="text-4xl font-bold text-[#07B300] mb-2">25,000+</div>
+            <div class="text-4xl font-bold text-[#07B300] mb-2">
+              <count-up end="25000" suffix="+" />
+            </div>
             <div class="text-xl font-bold text-white mb-2">Events Created</div>
             <div class="text-gray-400 text-base">
               Successfully hosted events
@@ -673,7 +675,9 @@
                 />
               </svg>
             </div>
-            <div class="text-4xl font-bold text-[#07B300] mb-2">2M+</div>
+            <div class="text-4xl font-bold text-[#07B300] mb-2">
+              <count-up end="2" suffix="M+" />
+            </div>
             <div class="text-xl font-bold text-white mb-2">Tickets Sold</div>
             <div class="text-gray-400 text-base">Across all event types</div>
           </div>
@@ -719,7 +723,9 @@
                 />
               </svg>
             </div>
-            <div class="text-4xl font-bold text-[#22c55e] mb-2">150,000+</div>
+            <div class="text-4xl font-bold text-[#22c55e] mb-2">
+              <count-up end="150000" suffix="+" />
+            </div>
             <div class="text-xl font-bold text-white mb-2">Active Users</div>
             <div class="text-gray-400 text-base">Organizers & attendees</div>
           </div>
@@ -763,7 +769,9 @@
                 />
               </svg>
             </div>
-            <div class="text-4xl font-bold text-[#07B300] mb-2">50M+</div>
+            <div class="text-4xl font-bold text-[#07B300] mb-2">
+              <count-up end="50" suffix="M+" />
+            </div>
             <div class="text-xl font-bold text-white mb-2">
               Revenue Processed
             </div>
@@ -812,7 +820,9 @@
                 />
               </svg>
             </div>
-            <div class="text-4xl font-bold text-[#07B300] mb-2">120+</div>
+            <div class="text-4xl font-bold text-[#07B300] mb-2">
+              <count-up end="120" suffix="+" />
+            </div>
             <div class="text-xl font-bold text-white mb-2">Countries</div>
             <div class="text-gray-400 text-base">Global reach</div>
           </div>
@@ -856,7 +866,9 @@
                 />
               </svg>
             </div>
-            <div class="text-4xl font-bold text-[#07B300] mb-2">99.0%</div>
+            <div class="text-4xl font-bold text-[#07B300] mb-2">
+              <count-up end="99.0" suffix="%" :decimals="1" />
+            </div>
             <div class="text-xl font-bold text-white mb-2">Uptime</div>
             <div class="text-gray-400 text-base">Reliable platform</div>
           </div>
@@ -1280,15 +1292,30 @@
         </div>
 
         <div class="grid lg:grid-cols-2 gap-12 items-start mb-20 items-center">
+          <!-- Left: List of Integrations -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Item 1 -->
             <div
-              class="bg-black border border-[#22c55e] p-6 rounded-xl cursor-pointer transition-all"
+              v-for="(item, index) in integrations"
+              :key="item.id"
+              @click="selectedIntegrationIndex = index"
+              :class="[
+                'p-6 rounded-xl cursor-pointer transition-all duration-300 border flex flex-col items-start gap-4',
+                selectedIntegrationIndex === index
+                  ? 'bg-black border-[#07B300] shadow-[0_0_20px_-5px_rgba(7,179,0,0.3)]'
+                  : 'bg-[#0A0A0A] border-white/5 hover:bg-[#22c55e]/5 hover:border-[#22c55e]/30 group',
+              ]"
             >
               <div
-                class="w-10 h-10 rounded-lg bg-[#22c55e]/10 flex items-center justify-center text-[#22c55e] mb-4"
+                :class="[
+                  'w-10 h-10 rounded-lg flex items-center justify-center transition-colors',
+                  selectedIntegrationIndex === index
+                    ? 'bg-[#07B300]/10 text-[#07B300]'
+                    : 'bg-white/5 text-gray-400 group-hover:text-[#22c55e] group-hover:bg-[#22c55e]/10',
+                ]"
               >
+                <!-- Icon mapping -->
                 <svg
+                  v-if="item.icon === 'payment'"
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
@@ -1302,20 +1329,8 @@
                   <rect width="20" height="14" x="2" y="5" rx="2" />
                   <line x1="2" x2="22" y1="10" y2="10" />
                 </svg>
-              </div>
-              <h3 class="text-[#07B300] font-semibold text-base">
-                Payment Processing
-              </h3>
-            </div>
-
-            <!-- Item 2 -->
-            <div
-              class="bg-[#0A0A0A] border border-white/5 p-6 rounded-xl hover:bg-[#22c55e]/5 hover:border-[#22c55e]/30 cursor-pointer transition-all group"
-            >
-              <div
-                class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-gray-400 group-hover:text-[#22c55e] group-hover:bg-[#22c55e]/10 transition-colors mb-4"
-              >
                 <svg
+                  v-if="item.icon === 'analytics'"
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
@@ -1330,22 +1345,8 @@
                   <line x1="12" x2="12" y1="20" y2="4" />
                   <line x1="6" x2="6" y1="20" y2="14" />
                 </svg>
-              </div>
-              <h3
-                class="text-gray-400 font-semibold text-base group-hover:text-white transition-colors"
-              >
-                Analytics & Insights
-              </h3>
-            </div>
-
-            <!-- Item 3 -->
-            <div
-              class="bg-[#0A0A0A] border border-white/5 p-6 rounded-xl hover:bg-[#22c55e]/5 hover:border-[#22c55e]/30 cursor-pointer transition-all group"
-            >
-              <div
-                class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-gray-400 group-hover:text-[#22c55e] group-hover:bg-[#22c55e]/10 transition-colors mb-4"
-              >
                 <svg
+                  v-if="item.icon === 'email'"
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
@@ -1359,22 +1360,8 @@
                   <rect width="20" height="16" x="2" y="4" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
-              </div>
-              <h3
-                class="text-gray-400 font-semibold text-base group-hover:text-white transition-colors"
-              >
-                Email Marketing
-              </h3>
-            </div>
-
-            <!-- Item 4 -->
-            <div
-              class="bg-[#0A0A0A] border border-white/5 p-6 rounded-xl hover:bg-[#22c55e]/5 hover:border-[#22c55e]/30 cursor-pointer transition-all group"
-            >
-              <div
-                class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-gray-400 group-hover:text-[#22c55e] group-hover:bg-[#22c55e]/10 transition-colors mb-4"
-              >
                 <svg
+                  v-if="item.icon === 'calendar'"
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
@@ -1390,22 +1377,8 @@
                   <line x1="8" x2="8" y1="2" y2="6" />
                   <line x1="3" x2="21" y1="10" y2="10" />
                 </svg>
-              </div>
-              <h3
-                class="text-gray-400 font-semibold text-base group-hover:text-white transition-colors"
-              >
-                Calendar Sync
-              </h3>
-            </div>
-
-            <!-- Item 5 -->
-            <div
-              class="bg-[#0A0A0A] border border-white/5 p-6 rounded-xl hover:bg-[#22c55e]/5 hover:border-[#22c55e]/30 cursor-pointer transition-all group"
-            >
-              <div
-                class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-gray-400 group-hover:text-[#22c55e] group-hover:bg-[#22c55e]/10 transition-colors mb-4"
-              >
                 <svg
+                  v-if="item.icon === 'messaging'"
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
@@ -1420,22 +1393,8 @@
                     d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
                   />
                 </svg>
-              </div>
-              <h3
-                class="text-gray-400 font-semibold text-base group-hover:text-white transition-colors"
-              >
-                Messaging & SMS
-              </h3>
-            </div>
-
-            <!-- Item 6 -->
-            <div
-              class="bg-[#0A0A0A] border border-white/5 p-6 rounded-xl hover:bg-[#22c55e]/5 hover:border-[#22c55e]/30 cursor-pointer transition-all group"
-            >
-              <div
-                class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-gray-400 group-hover:text-[#22c55e] group-hover:bg-[#22c55e]/10 transition-colors mb-4"
-              >
                 <svg
+                  v-if="item.icon === 'streaming'"
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
@@ -1451,28 +1410,35 @@
                 </svg>
               </div>
               <h3
-                class="text-gray-400 font-semibold text-base group-hover:text-white transition-colors"
+                :class="[
+                  'font-semibold text-base transition-colors',
+                  selectedIntegrationIndex === index
+                    ? 'text-[#07B300]'
+                    : 'text-gray-400 group-hover:text-white',
+                ]"
               >
-                Live Streaming
+                {{ item.name }}
               </h3>
             </div>
           </div>
 
           <!-- Right: Details Panel -->
           <div
-            class="bg-[#0A0A0A] border border-white/10 rounded-2xl p-8 lg:p-10 relative overflow-hidden"
+            class="bg-[#0A0A0A] border border-white/10 rounded-2xl p-8 lg:p-10 relative overflow-hidden min-h-[480px] flex flex-col"
           >
             <!-- Background Glow -->
             <div
-              class="absolute top-0 right-0 w-64 h-64 bg-[#22c55e]/10 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2"
+              class="absolute top-0 right-0 w-64 h-64 bg-[#07B300]/10 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2"
             ></div>
 
-            <div class="relative z-10">
-              <div class="flex items-center gap-4 mb-6">
+            <div class="relative z-10 flex-1">
+              <div class="flex items-center gap-4 mb-8">
                 <div
-                  class="w-14 h-14 rounded-xl bg-[#22c55e]/10 flex items-center justify-center text-[#22c55e] border border-[#22c55e]/20"
+                  class="w-14 h-14 rounded-xl bg-[#07B300]/10 flex items-center justify-center text-[#07B300] border border-[#07B300]/20"
                 >
+                  <!-- Large Icon -->
                   <svg
+                    v-if="selectedIntegration.icon === 'payment'"
                     xmlns="http://www.w3.org/2000/svg"
                     width="28"
                     height="28"
@@ -1486,121 +1452,150 @@
                     <rect width="20" height="14" x="2" y="5" rx="2" />
                     <line x1="2" x2="22" y1="10" y2="10" />
                   </svg>
+                  <svg
+                    v-if="selectedIntegration.icon === 'analytics'"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="18" x2="18" y1="20" y2="10" />
+                    <line x1="12" x2="12" y1="20" y2="4" />
+                    <line x1="6" x2="6" y1="20" y2="14" />
+                  </svg>
+                  <svg
+                    v-if="selectedIntegration.icon === 'email'"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                  <svg
+                    v-if="selectedIntegration.icon === 'calendar'"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                    <line x1="16" x2="16" y1="2" y2="6" />
+                    <line x1="8" x2="8" y1="2" y2="6" />
+                    <line x1="3" x2="21" y1="10" y2="10" />
+                  </svg>
+                  <svg
+                    v-if="selectedIntegration.icon === 'messaging'"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                    />
+                  </svg>
+                  <svg
+                    v-if="selectedIntegration.icon === 'streaming'"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m22 2-7 20-4-9-9-4Z" />
+                    <path d="M22 2 11 13" />
+                  </svg>
                 </div>
                 <div>
                   <h3 class="text-2xl font-bold text-white">
-                    Payment Processing
+                    {{ selectedIntegration.name }}
                   </h3>
                   <p class="text-gray-400 text-lg">
-                    Secure payment processing with Stripe
+                    {{ selectedIntegration.description }}
                   </p>
                 </div>
               </div>
 
               <!-- Feature List -->
-              <div class="space-y-4 mb-8">
+              <div class="space-y-4 mb-10 transition-all duration-300">
                 <div
-                  class="flex items-center gap-3 bg-black/50 p-4 rounded-xl border border-white/5"
+                  v-for="(feature, fIndex) in selectedIntegration.features"
+                  :key="fIndex"
+                  class="flex items-center gap-3 bg-black/50 p-4 rounded-xl border border-white/5 animate-fade-in"
+                  :style="{ animationDelay: fIndex * 100 + 'ms' }"
                 >
-                  <div class="text-[#22c55e]">
+                  <div class="text-[#07B300]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="18"
+                      width="20"
+                      height="20"
                       viewBox="0 0 24 24"
-                      fill="currentColor"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="text-[#07B300]"
                     >
                       <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                        d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"
+                        v-if="false"
                       />
+                      <polyline points="20 6 9 17 4 12" />
                     </svg>
                   </div>
-                  <span class="text-white text-lg"
-                    >Accept credit cards, Apple Pay, Google Pay</span
-                  >
-                </div>
-                <div
-                  class="flex items-center gap-3 bg-black/50 p-4 rounded-xl border border-white/5"
-                >
-                  <div class="text-[#22c55e]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                      />
-                    </svg>
-                  </div>
-                  <span class="text-white text-lg"
-                    >Automatic currency conversion</span
-                  >
-                </div>
-                <div
-                  class="flex items-center gap-3 bg-black/50 p-4 rounded-xl border border-white/5"
-                >
-                  <div class="text-[#22c55e]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                      />
-                    </svg>
-                  </div>
-                  <span class="text-white text-lg"
-                    >PCI-DSS compliant security</span
-                  >
-                </div>
-                <div
-                  class="flex items-center gap-3 bg-black/50 p-4 rounded-xl border border-white/5"
-                >
-                  <div class="text-[#22c55e]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                      />
-                    </svg>
-                  </div>
-                  <span class="text-white text-lg"
-                    >Instant payouts to your bank</span
-                  >
+                  <span class="text-white text-lg">{{ feature }}</span>
                 </div>
               </div>
-
-              <button
-                class="w-full bg-[#07B300] hover:bg-[#16a34a] text-black font-semibold text-lg py-4 rounded-xl transition-colors flex items-center justify-center gap-2"
-              >
-                Explore All Integrations
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </button>
             </div>
+
+            <!-- Action Button -->
+            <button
+              class="w-full py-4 rounded-xl bg-[#07B300] hover:bg-[#16a34a] text-black font-bold flex items-center justify-center gap-2 transition-all group overflow-hidden relative"
+            >
+              <span class="relative z-10">Explore All Integrations</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="relative z-10 group-hover:translate-x-1 transition-transform"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
           </div>
         </div>
 
@@ -2681,13 +2676,25 @@ body {
 
 <script>
 import faqData from "../data/faq.json";
+import integrationsData from "../data/integrations.json";
+import CountUp from "../components/count-up.vue";
 
 export default {
+  components: {
+    CountUp,
+  },
   data() {
     return {
       activeIndex: null,
+      selectedIntegrationIndex: 0,
       faqData,
+      integrations: integrationsData,
     };
+  },
+  computed: {
+    selectedIntegration() {
+      return this.integrations[this.selectedIntegrationIndex];
+    },
   },
   methods: {
     toggleFaq(index) {
