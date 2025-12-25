@@ -32,35 +32,35 @@
       </div>
 
       <!-- Desktop Menu -->
-      <ul class="hidden md:flex gap-6 text-sm font-medium text-gray-300">
-        <li class="hover:text-[#16A34A] transition cursor-pointer">Discover</li>
-        <li class="hover:text-[#16A34A] transition cursor-pointer">
+      <ul class="hidden lg:flex gap-6 text-lg font-medium text-gray-300">
+        <li class="hover:text-[#07B300] transition cursor-pointer">Discover</li>
+        <li class="hover:text-[#07B300] transition cursor-pointer">
           Validate Ticket
         </li>
-        <li class="hover:text-[#16A34A] transition cursor-pointer">
+        <li class="hover:text-[#07B300] transition cursor-pointer">
           For Organizers
         </li>
-        <li class="hover:text-[#16A34A] transition cursor-pointer">About</li>
-        <li class="hover:text-[#16A34A] transition cursor-pointer">
+        <li class="hover:text-[#07B300] transition cursor-pointer">About</li>
+        <li class="hover:text-[#07B300] transition cursor-pointer">
           How It Works
         </li>
-        <li class="hover:text-[#16A34A] transition cursor-pointer">Pricing</li>
+        <li class="hover:text-[#07B300] transition cursor-pointer">Pricing</li>
       </ul>
 
-      <div class="hidden md:flex items-center gap-4">
+      <div class="hidden lg:flex items-center gap-4">
         <button
-          class="bg-[#22c55e]/10 hover:bg-[#22c55e]/20 text-white transition px-5 py-2.5 rounded-[0.50rem] font-bold text-sm"
+          class="bg-[#22c55e]/10 hover:bg-[#22c55e]/20 text-white transition px-5 py-2.5 rounded-[0.50rem] font-bold text-lg"
         >
           Log In
         </button>
         <button
-          class="bg-[#07B300] hover:bg-[#16a34a] transition px-5 py-2.5 text-black rounded-[0.50rem] font-bold text-sm"
+          class="bg-[#07B300] hover:bg-[#16a34a] transition px-5 py-2.5 text-black rounded-[0.50rem] font-bold text-lg"
         >
           Get Started
         </button>
       </div>
 
-      <button @click="isMenuOpen = !isMenuOpen" class="md:hidden text-white">
+      <button @click="isMenuOpen = !isMenuOpen" class="lg:hidden text-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="28"
@@ -83,7 +83,7 @@
     <!-- Mobile Menu Overlay -->
     <div
       v-if="isMenuOpen"
-      class="fixed inset-0 bg-black/95 backdrop-blur-xl z-50 flex flex-col items-center justify-center gap-8 md:hidden transition-all duration-300"
+      class="fixed inset-0 bg-black/95 backdrop-blur-xl z-50 flex flex-col items-center justify-center gap-8 lg:hidden transition-all duration-300"
     >
       <button
         @click="isMenuOpen = false"

@@ -3,10 +3,10 @@
   <footer class="bg-black border-t border-white/10 pt-20 pb-10">
     <div class="max-w-[1280px] mx-auto px-4">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 md:gap-14 mb-16"
+        class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-10 md:gap-14 mb-16"
       >
         <!-- Brand Section -->
-        <div class="lg:col-span-2">
+        <div class="col-span-2 lg:col-span-2">
           <div
             class="flex items-center gap-2 font-bold text-xl tracking-tight text-white mb-6"
           >

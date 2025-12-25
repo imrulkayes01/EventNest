@@ -6,8 +6,6 @@
     <section
       class="relative flex flex-col items-center justify-center min-h-screen px-4 py-24 overflow-hidden"
     >
-      <!-- Green Glow Background Effect -->
-      <!-- Content Container -->
       <div
         class="relative z-10 w-full max-w-[1280px] mx-auto text-center flex flex-col items-center"
       >
@@ -36,7 +34,7 @@
 
         <!-- Headline -->
         <h1
-          class="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight animate-fade-in-up delay-100"
+          class="text-5xl md:text-8xl font-bold tracking-tight mb-6 leading-tight animate-fade-in-up delay-100"
         >
           Create & Experience <br />
           <span class="text-[#07B300]">Unforgettable Events</span>
@@ -44,7 +42,7 @@
 
         <!-- Subtitle -->
         <p
-          class="text-lg md:text-xl text-gray-400 max-w-2xl mb-10 animate-fade-in-up delay-200"
+          class="text-xl md:text-xl text-gray-400 max-w-2xl mb-10 animate-fade-in-up delay-200"
         >
           The all-in-one platform for event organizers and attendees. Create,
           discover, and manage events that leave lasting impressions.
@@ -169,48 +167,56 @@
 
         <!-- Stats -->
         <div
-          class="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 w-full max-w-[1280px] animate-fade-in-up delay-500"
+          class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-12 w-full animate-fade-in-up delay-500"
         >
           <div class="text-center">
-            <div class="text-3xl md:text-5xl font-bold text-[#07B300] mb-2">
+            <div
+              class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#07B300] mb-2"
+            >
               10K+
             </div>
             <div class="text-gray-400 text-sm font-medium">Events Hosted</div>
           </div>
           <div class="text-center">
-            <div class="text-3xl md:text-5xl font-bold text-[#07B300] mb-2">
+            <div
+              class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#07B300] mb-2"
+            >
               500K+
             </div>
             <div class="text-gray-400 text-sm font-medium">Tickets Sold</div>
           </div>
           <div class="text-center">
-            <div class="text-3xl md:text-5xl font-bold text-[#07B300] mb-2">
+            <div
+              class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#07B300] mb-2"
+            >
               50K+
             </div>
             <div class="text-gray-400 text-sm font-medium">Organizers</div>
           </div>
           <div class="text-center">
-            <div class="text-3xl md:text-5xl font-bold text-[#07B300] mb-2">
+            <div
+              class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#07B300] mb-2"
+            >
               99.9%
             </div>
             <div class="text-gray-400 text-sm font-medium">Uptime</div>
           </div>
         </div>
+      </div>
 
-        <!-- Scroll Indicator -->
-        <div
-          class="flex flex-col items-center gap-3 animate-bounce opacity-70 mb-12 mt-12"
+      <!-- Scroll Indicator -->
+      <div
+        class="absolute bottom-24 flex flex-col items-center gap-3 animate-bounce cursor-pointer"
+      >
+        <span class="text-xs text-white/60 font-medium tracking-wide"
+          >Scroll to explore</span
         >
-          <span class="text-xs text-white/60 font-medium tracking-wide"
-            >Scroll to explore</span
-          >
+        <div
+          class="w-6 h-9 border-2 border-white/30 rounded-full flex justify-center p-1"
+        >
           <div
-            class="w-6 h-9 border-2 border-white/30 rounded-full flex justify-center p-1"
-          >
-            <div
-              class="w-1.5 h-1.5 bg-[#22c55e] rounded-full animate-scroll-dot"
-            ></div>
-          </div>
+            class="w-1.5 h-1.5 bg-[#22c55e] rounded-full animate-scroll-dot"
+          ></div>
         </div>
       </div>
     </section>
@@ -226,17 +232,16 @@
           Features
         </span>
         <h2
-          class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight"
+          class="text-3xl md:text-6xl font-bold text-white mb-6 leading-tight"
         >
           Everything You Need to <br />
           <span class="text-[#07B300]">Run Successful Events</span>
         </h2>
-        <p class="text-gray-400 text-lg max-w-2xl mb-16">
+        <p class="text-gray-400 text-xl max-w-2xl mb-16">
           From planning to execution, our platform provides all the tools you
           need to create memorable experiences.
         </p>
 
-        <!-- Features Grid -->
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full text-left"
         >
@@ -268,7 +273,7 @@
             <h3 class="text-xl font-bold text-[#22c55e] mb-3">
               Event Creation
             </h3>
-            <p class="text-gray-400 leading-relaxed">
+            <p class="text-gray-400 text-lg leading-relaxed">
               Create stunning events in minutes with our intuitive builder. Add
               all details, from venue to ticketing.
             </p>
@@ -301,10 +306,14 @@
                 <path d="M13 11v2" />
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-white mb-3">Smart Ticketing</h3>
-            <p class="text-gray-400 leading-relaxed">
+            <h3
+              class="text-xl font-bold text-white group-hover:text-[#07B300] transition-colors mb-3"
+            >
+              Smart Ticketing
+            </h3>
+            <p class="text-gray-400 text-lg leading-relaxed">
               Flexible ticket types, dynamic pricing, and QR code validation for
-              seamless check-ins.
+              seamless check-ins and smooth user experience
             </p>
           </div>
 
@@ -331,8 +340,12 @@
                 <line x1="2" x2="22" y1="10" y2="10" />
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-white mb-3">Secure Payments</h3>
-            <p class="text-gray-400 leading-relaxed">
+            <h3
+              class="text-xl font-bold text-white group-hover:text-[#07B300] transition-colors mb-3"
+            >
+              Secure Payments
+            </h3>
+            <p class="text-gray-400 text-lg leading-relaxed">
               Accept payments globally with Stripe integration. Multiple
               currencies and payment methods.
             </p>
@@ -361,10 +374,12 @@
                 <path d="m18 9-5 5-4-4-3 3" />
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-white mb-3">
+            <h3
+              class="text-xl font-bold text-white group-hover:text-[#07B300] transition-colors mb-3"
+            >
               Real-time Analytics
             </h3>
-            <p class="text-gray-400 leading-relaxed">
+            <p class="text-gray-400 text-lg leading-relaxed">
               Track sales, attendance, and revenue with comprehensive dashboards
               and reports.
             </p>
@@ -395,10 +410,12 @@
                 <path d="M16 3.13a4 4 0 0 1 0 7.75" />
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-white mb-3">
+            <h3
+              class="text-xl font-bold text-white group-hover:text-[#07B300] transition-colors mb-3"
+            >
               Attendee Management
             </h3>
-            <p class="text-gray-400 leading-relaxed">
+            <p class="text-gray-400 text-lg leading-relaxed">
               Manage guest lists, send notifications, and handle waitlists
               effortlessly.
             </p>
@@ -426,8 +443,12 @@
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-white mb-3">Fraud Protection</h3>
-            <p class="text-gray-400 leading-relaxed">
+            <h3
+              class="text-xl font-bold text-white group-hover:text-[#07B300] transition-colors mb-3"
+            >
+              Fraud Protection
+            </h3>
+            <p class="text-gray-400 text-lg leading-relaxed">
               Advanced security measures to prevent ticket fraud and
               unauthorized access.
             </p>
@@ -455,8 +476,12 @@
                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-white mb-3">Instant Check-in</h3>
-            <p class="text-gray-400 leading-relaxed">
+            <h3
+              class="text-xl font-bold text-white group-hover:text-[#07B300] transition-colors mb-3"
+            >
+              Instant Check-in
+            </h3>
+            <p class="text-gray-400 text-lg leading-relaxed">
               Scan tickets with any device. Fast, reliable, and works offline.
             </p>
           </div>
@@ -487,8 +512,12 @@
                 />
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-white mb-3">Virtual Events</h3>
-            <p class="text-gray-400 leading-relaxed">
+            <h3
+              class="text-xl font-bold text-white group-hover:text-[#07B300] transition-colors mb-3"
+            >
+              Virtual Events
+            </h3>
+            <p class="text-gray-400 text-lg leading-relaxed">
               Host hybrid or fully virtual events with integrated streaming
               platforms.
             </p>
@@ -517,10 +546,12 @@
                 <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-white mb-3">
+            <h3
+              class="text-xl font-bold text-white group-hover:text-[#07B300] transition-colors mb-3"
+            >
               Smart Notifications
             </h3>
-            <p class="text-gray-400 leading-relaxed">
+            <p class="text-gray-400 text-lg leading-relaxed">
               Automated reminders and updates via email, SMS, and push
               notifications.
             </p>
@@ -532,7 +563,6 @@
     <!-- Platform Statistics Section -->
     <section class="py-24 bg-black relative">
       <div class="w-full max-w-[1280px] mx-auto px-4">
-        <!-- Section Header -->
         <div class="text-center mb-16 flex flex-col items-center">
           <span
             class="text-[#07B300] font-semibold tracking-wider text-sm uppercase mb-4"
@@ -540,18 +570,17 @@
             Platform Statistics
           </span>
           <h2
-            class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight"
+            class="text-3xl md:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Trusted by <br class="hidden md:block" />
             <span class="text-[#07B300]">Thousands Worldwide</span>
           </h2>
-          <p class="text-gray-400 text-lg max-w-2xl">
+          <p class="text-gray-400 text-xl max-w-2xl">
             Real-time metrics that showcase the scale and reliability of our
             event management platform.
           </p>
         </div>
 
-        <!-- Statistics Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           <!-- Stat Card 1 -->
           <div
@@ -584,7 +613,7 @@
                 viewBox="0 0 60 30"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="text-[#22c55e]"
+                class="text-[#07B300]"
               >
                 <path
                   d="M1 25C10 22 15 28 25 15C35 2 45 18 59 1"
@@ -594,18 +623,20 @@
                 />
               </svg>
             </div>
-            <div class="text-4xl font-bold text-[#22c55e] mb-2">25,000+</div>
+            <div class="text-4xl font-bold text-[#07B300] mb-2">25,000+</div>
             <div class="text-xl font-bold text-white mb-2">Events Created</div>
-            <div class="text-gray-400 text-sm">Successfully hosted events</div>
+            <div class="text-gray-400 text-base">
+              Successfully hosted events
+            </div>
           </div>
 
           <!-- Stat Card 2 -->
           <div
-            class="p-8 rounded-2xl bg-[#0A0A0A] border border-white/5 hover:border-[#22c55e]/50 transition-all duration-300 group"
+            class="p-8 rounded-2xl bg-[#0A0A0A] border border-white/5 hover:border-[#07B300]/50 transition-all duration-300 group"
           >
             <div class="flex justify-between items-start mb-6">
               <div
-                class="w-12 h-12 rounded-lg bg-[#22c55e]/10 flex items-center justify-center text-[#22c55e]"
+                class="w-12 h-12 rounded-lg bg-[#07B300]/10 flex items-center justify-center text-[#07B300]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -632,7 +663,7 @@
                 viewBox="0 0 60 30"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="text-[#22c55e]"
+                class="text-[#07B300]"
               >
                 <path
                   d="M1 28C15 25 20 15 30 18C40 21 50 10 59 5"
@@ -642,9 +673,9 @@
                 />
               </svg>
             </div>
-            <div class="text-4xl font-bold text-[#22c55e] mb-2">2M+</div>
+            <div class="text-4xl font-bold text-[#07B300] mb-2">2M+</div>
             <div class="text-xl font-bold text-white mb-2">Tickets Sold</div>
-            <div class="text-gray-400 text-sm">Across all event types</div>
+            <div class="text-gray-400 text-base">Across all event types</div>
           </div>
 
           <!-- Stat Card 3 -->
@@ -690,7 +721,7 @@
             </div>
             <div class="text-4xl font-bold text-[#22c55e] mb-2">150,000+</div>
             <div class="text-xl font-bold text-white mb-2">Active Users</div>
-            <div class="text-gray-400 text-sm">Organizers & attendees</div>
+            <div class="text-gray-400 text-base">Organizers & attendees</div>
           </div>
 
           <!-- Stat Card 4 -->
@@ -722,7 +753,7 @@
                 viewBox="0 0 60 30"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="text-[#22c55e]"
+                class="text-[#07B300]"
               >
                 <path
                   d="M1 20C10 25 20 15 30 20C40 25 50 5 59 10"
@@ -732,20 +763,20 @@
                 />
               </svg>
             </div>
-            <div class="text-4xl font-bold text-[#22c55e] mb-2">50M+</div>
+            <div class="text-4xl font-bold text-[#07B300] mb-2">50M+</div>
             <div class="text-xl font-bold text-white mb-2">
               Revenue Processed
             </div>
-            <div class="text-gray-400 text-sm">Secure transactions</div>
+            <div class="text-gray-400 text-base">Secure transactions</div>
           </div>
 
           <!-- Stat Card 5 -->
           <div
-            class="p-8 rounded-2xl bg-[#0A0A0A] border border-white/5 hover:border-[#22c55e]/50 transition-all duration-300 group"
+            class="p-8 rounded-2xl bg-[#0A0A0A] border border-white/5 hover:border-[#07B300]/50 transition-all duration-300 group"
           >
             <div class="flex justify-between items-start mb-6">
               <div
-                class="w-12 h-12 rounded-lg bg-[#22c55e]/10 flex items-center justify-center text-[#22c55e]"
+                class="w-12 h-12 rounded-lg bg-[#07B300]/10 flex items-center justify-center text-[#07B300]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -771,7 +802,7 @@
                 viewBox="0 0 60 30"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="text-[#22c55e]"
+                class="text-[#07B300]"
               >
                 <path
                   d="M1 25C10 15 20 20 30 10C40 5 50 15 59 5"
@@ -781,18 +812,18 @@
                 />
               </svg>
             </div>
-            <div class="text-4xl font-bold text-[#22c55e] mb-2">120+</div>
+            <div class="text-4xl font-bold text-[#07B300] mb-2">120+</div>
             <div class="text-xl font-bold text-white mb-2">Countries</div>
-            <div class="text-gray-400 text-sm">Global reach</div>
+            <div class="text-gray-400 text-base">Global reach</div>
           </div>
 
           <!-- Stat Card 6 -->
           <div
-            class="p-8 rounded-2xl bg-[#0A0A0A] border border-white/5 hover:border-[#22c55e]/50 transition-all duration-300 group"
+            class="p-8 rounded-2xl bg-[#0A0A0A] border border-white/5 hover:border-[#07B300]/50 transition-all duration-300 group"
           >
             <div class="flex justify-between items-start mb-6">
               <div
-                class="w-12 h-12 rounded-lg bg-[#22c55e]/10 flex items-center justify-center text-[#22c55e]"
+                class="w-12 h-12 rounded-lg bg-[#07B300]/10 flex items-center justify-center text-[#07B300]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -815,7 +846,7 @@
                 viewBox="0 0 60 30"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="text-[#22c55e]"
+                class="text-[#07B300]"
               >
                 <path
                   d="M1 28C10 20 20 25 30 15C40 10 50 15 59 5"
@@ -825,9 +856,9 @@
                 />
               </svg>
             </div>
-            <div class="text-4xl font-bold text-[#22c55e] mb-2">99.0%</div>
+            <div class="text-4xl font-bold text-[#07B300] mb-2">99.0%</div>
             <div class="text-xl font-bold text-white mb-2">Uptime</div>
-            <div class="text-gray-400 text-sm">Reliable platform</div>
+            <div class="text-gray-400 text-base">Reliable platform</div>
           </div>
         </div>
 
@@ -835,13 +866,13 @@
         <div class="flex items-center justify-center gap-2">
           <span class="relative flex h-3 w-3">
             <span
-              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#22c55e] opacity-75"
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#07B300] opacity-75"
             ></span>
             <span
-              class="relative inline-flex rounded-full h-3 w-3 bg-[#22c55e]"
+              class="relative inline-flex rounded-full h-3 w-3 bg-[#07B300]"
             ></span>
           </span>
-          <span class="text-gray-400 text-sm">
+          <span class="text-gray-400 text-base">
             Live data - Updated in real-time
           </span>
         </div>
@@ -850,13 +881,11 @@
 
     <!-- How It Works Section -->
     <section class="py-24 bg-[#0A0A0A] relative overflow-hidden">
-      <!-- Background Glow -->
       <div
         class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#22c55e]/5 rounded-full blur-[120px] pointer-events-none"
       ></div>
 
       <div class="w-full max-w-[1280px] mx-auto px-4 relative z-10">
-        <!-- Section Header -->
         <div class="text-center mb-20 flex flex-col items-center">
           <span
             class="text-[#07B300] font-semibold tracking-wider text-sm uppercase mb-4"
@@ -864,23 +893,22 @@
             How It Works
           </span>
           <h2
-            class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight"
+            class="text-3xl md:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Launch Your Event <br class="hidden md:block" />
             <span class="text-[#07B300]">in Four Simple Steps</span>
           </h2>
-          <p class="text-gray-400 text-lg max-w-2xl">
+          <p class="text-gray-400 text-xl max-w-2xl">
             Our streamlined process makes it easy to go from idea to sold-out
             event.
           </p>
         </div>
 
-        <!-- Steps Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           <!-- Step 1 -->
           <div class="relative group">
             <div
-              class="absolute -top-6 -left-6 md:-left-8 w-12 h-12 md:w-16 md:h-16 bg-[#07B300] text-black font-bold text-xl md:text-2xl rounded-full flex items-center justify-center z-20 shadow-lg shadow-[#22c55e]/20"
+              class="absolute -top-2 -left-2 md:-left-4 w-8 h-8 md:w-12 md:h-12 bg-[#07B300] text-black font-bold text-base md:text-xl rounded-full flex items-center justify-center z-20 shadow-lg shadow-[#22c55e]/20"
             >
               01
             </div>
@@ -890,7 +918,7 @@
               <h3 class="text-2xl font-bold text-white mb-4 mt-2">
                 Create Your Event
               </h3>
-              <p class="text-gray-400 mb-8 leading-relaxed">
+              <p class="text-gray-400 text-lg mb-8 leading-relaxed">
                 Set up your event in minutes. Add details, upload images, and
                 configure ticket types.
               </p>
@@ -962,7 +990,7 @@
           <!-- Step 2 -->
           <div class="relative group">
             <div
-              class="absolute -top-6 -left-6 md:-left-8 w-12 h-12 md:w-16 md:h-16 bg-[#07B300] text-black font-bold text-xl md:text-2xl rounded-full flex items-center justify-center z-20 shadow-lg shadow-[#22c55e]/20"
+              class="absolute -top-2 -left-2 md:-left-4 w-8 h-8 md:w-12 md:h-12 bg-[#07B300] text-black font-bold text-base md:text-xl rounded-full flex items-center justify-center z-20 shadow-lg shadow-[#22c55e]/20"
             >
               02
             </div>
@@ -972,7 +1000,7 @@
               <h3 class="text-2xl font-bold text-white mb-4 mt-2">
                 Publish & Promote
               </h3>
-              <p class="text-gray-400 mb-8 leading-relaxed">
+              <p class="text-gray-400 text-lg mb-8 leading-relaxed">
                 Share your event with the world. Get discovered by thousands of
                 potential attendees.
               </p>
@@ -1044,7 +1072,7 @@
           <!-- Step 3 -->
           <div class="relative group">
             <div
-              class="absolute -top-6 -left-6 md:-left-8 w-12 h-12 md:w-16 md:h-16 bg-[#07B300] text-black font-bold text-xl md:text-2xl rounded-full flex items-center justify-center z-20 shadow-lg shadow-[#22c55e]/20"
+              class="absolute -top-2 -left-2 md:-left-4 w-8 h-8 md:w-12 md:h-12 bg-[#07B300] text-black font-bold text-base md:text-xl rounded-full flex items-center justify-center z-20 shadow-lg shadow-[#22c55e]/20"
             >
               03
             </div>
@@ -1054,7 +1082,7 @@
               <h3 class="text-2xl font-bold text-white mb-4 mt-2">
                 Sell Tickets
               </h3>
-              <p class="text-gray-400 mb-8 leading-relaxed">
+              <p class="text-gray-400 text-lg mb-8 leading-relaxed">
                 Accept secure payments and manage sales in real-time with our
                 powerful dashboard.
               </p>
@@ -1126,7 +1154,7 @@
           <!-- Step 4 -->
           <div class="relative group">
             <div
-              class="absolute -top-6 -left-6 md:-left-8 w-12 h-12 md:w-16 md:h-16 bg-[#07B300] text-black font-bold text-xl md:text-2xl rounded-full flex items-center justify-center z-20 shadow-lg shadow-[#22c55e]/20"
+              class="absolute -top-2 -left-2 md:-left-4 w-8 h-8 md:w-12 md:h-12 bg-[#07B300] text-black font-bold text-base md:text-xl rounded-full flex items-center justify-center z-20 shadow-lg shadow-[#22c55e]/20"
             >
               04
             </div>
@@ -1136,7 +1164,7 @@
               <h3 class="text-2xl font-bold text-white mb-4 mt-2">
                 Check-in Attendees
               </h3>
-              <p class="text-gray-400 mb-8 leading-relaxed">
+              <p class="text-gray-400 text-lg mb-8 leading-relaxed">
                 Seamless check-in with QR scanning. Track attendance and manage
                 entry in real-time.
               </p>
@@ -1234,7 +1262,6 @@
     <!-- Integrations Section -->
     <section class="py-24 bg-black relative">
       <div class="w-full max-w-[1280px] mx-auto px-4">
-        <!-- Section Header -->
         <div class="text-center mb-16 flex flex-col items-center">
           <span
             class="text-[#07B300] font-semibold tracking-wider text-sm uppercase mb-4"
@@ -1242,20 +1269,19 @@
             Integrations
           </span>
           <h2
-            class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight"
+            class="text-3xl md:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Connect Your <span class="text-[#07B300]">Favorite Tools</span>
           </h2>
-          <p class="text-gray-400 text-lg max-w-2xl">
+          <p class="text-gray-400 text-xl max-w-2xl">
             EventNest seamlessly integrates with the tools you already use,
             creating a unified event management experience.
           </p>
         </div>
 
-        <div class="grid lg:grid-cols-2 gap-12 items-start mb-20">
-          <!-- Left: Navigation Grid -->
+        <div class="grid lg:grid-cols-2 gap-12 items-start mb-20 items-center">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Item 1: Payment Processing (Active) -->
+            <!-- Item 1 -->
             <div
               class="bg-black border border-[#22c55e] p-6 rounded-xl cursor-pointer transition-all"
             >
@@ -1277,7 +1303,7 @@
                   <line x1="2" x2="22" y1="10" y2="10" />
                 </svg>
               </div>
-              <h3 class="text-white font-semibold text-sm">
+              <h3 class="text-[#07B300] font-semibold text-base">
                 Payment Processing
               </h3>
             </div>
@@ -1306,7 +1332,7 @@
                 </svg>
               </div>
               <h3
-                class="text-gray-400 font-semibold text-sm group-hover:text-white transition-colors"
+                class="text-gray-400 font-semibold text-base group-hover:text-white transition-colors"
               >
                 Analytics & Insights
               </h3>
@@ -1335,7 +1361,7 @@
                 </svg>
               </div>
               <h3
-                class="text-gray-400 font-semibold text-sm group-hover:text-white transition-colors"
+                class="text-gray-400 font-semibold text-base group-hover:text-white transition-colors"
               >
                 Email Marketing
               </h3>
@@ -1366,7 +1392,7 @@
                 </svg>
               </div>
               <h3
-                class="text-gray-400 font-semibold text-sm group-hover:text-white transition-colors"
+                class="text-gray-400 font-semibold text-base group-hover:text-white transition-colors"
               >
                 Calendar Sync
               </h3>
@@ -1396,7 +1422,7 @@
                 </svg>
               </div>
               <h3
-                class="text-gray-400 font-semibold text-sm group-hover:text-white transition-colors"
+                class="text-gray-400 font-semibold text-base group-hover:text-white transition-colors"
               >
                 Messaging & SMS
               </h3>
@@ -1425,7 +1451,7 @@
                 </svg>
               </div>
               <h3
-                class="text-gray-400 font-semibold text-sm group-hover:text-white transition-colors"
+                class="text-gray-400 font-semibold text-base group-hover:text-white transition-colors"
               >
                 Live Streaming
               </h3>
@@ -1465,7 +1491,7 @@
                   <h3 class="text-2xl font-bold text-white">
                     Payment Processing
                   </h3>
-                  <p class="text-gray-400">
+                  <p class="text-gray-400 text-lg">
                     Secure payment processing with Stripe
                   </p>
                 </div>
@@ -1489,7 +1515,7 @@
                       />
                     </svg>
                   </div>
-                  <span class="text-white"
+                  <span class="text-white text-lg"
                     >Accept credit cards, Apple Pay, Google Pay</span
                   >
                 </div>
@@ -1509,7 +1535,9 @@
                       />
                     </svg>
                   </div>
-                  <span class="text-white">Automatic currency conversion</span>
+                  <span class="text-white text-lg"
+                    >Automatic currency conversion</span
+                  >
                 </div>
                 <div
                   class="flex items-center gap-3 bg-black/50 p-4 rounded-xl border border-white/5"
@@ -1527,7 +1555,9 @@
                       />
                     </svg>
                   </div>
-                  <span class="text-white">PCI-DSS compliant security</span>
+                  <span class="text-white text-lg"
+                    >PCI-DSS compliant security</span
+                  >
                 </div>
                 <div
                   class="flex items-center gap-3 bg-black/50 p-4 rounded-xl border border-white/5"
@@ -1545,12 +1575,14 @@
                       />
                     </svg>
                   </div>
-                  <span class="text-white">Instant payouts to your bank</span>
+                  <span class="text-white text-lg"
+                    >Instant payouts to your bank</span
+                  >
                 </div>
               </div>
 
               <button
-                class="w-full bg-[#07B300] hover:bg-[#16a34a] text-black font-semibold py-4 rounded-xl transition-colors flex items-center justify-center gap-2"
+                class="w-full bg-[#07B300] hover:bg-[#16a34a] text-black font-semibold text-lg py-4 rounded-xl transition-colors flex items-center justify-center gap-2"
               >
                 Explore All Integrations
                 <svg
@@ -1636,7 +1668,6 @@
     <!-- Testimonials Section -->
     <section class="py-24 bg-[#0A0A0A] relative">
       <div class="w-full max-w-[1280px] mx-auto px-4">
-        <!-- Section Header -->
         <div class="text-center mb-16 flex flex-col items-center">
           <span
             class="text-[#07B300] font-semibold tracking-wider text-sm uppercase mb-4"
@@ -1644,30 +1675,29 @@
             Testimonials
           </span>
           <h2
-            class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight"
+            class="text-3xl md:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Loved by Event <br class="hidden md:block" />
             <span class="text-[#07B300]">Organizers Worldwide</span>
           </h2>
-          <p class="text-gray-400 text-lg max-w-2xl">
+          <p class="text-gray-400 text-xl max-w-2xl">
             Join thousands of organizers who trust EventNest to power their
             events.
           </p>
         </div>
 
-        <!-- Testimonials Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Testimonial 1 -->
           <div
             class="p-8 rounded-2xl bg-black border border-white/10 hover:border-[#22c55e]/30 transition-all duration-300"
           >
-            <div class="flex gap-1 mb-6 text-[#22c55e]">
+            <div class="flex gap-1 mb-6 text-[#07B300]">
               <svg
                 v-for="i in 5"
                 :key="i"
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -1676,7 +1706,7 @@
                 />
               </svg>
             </div>
-            <p class="text-gray-300 mb-8 leading-relaxed">
+            <p class="text-gray-300 text-lg mb-8 leading-relaxed">
               "EventNest transformed how we manage our annual conference. The
               ticketing and check-in process is incredibly smooth."
             </p>
@@ -1687,8 +1717,8 @@
                 class="w-12 h-12 rounded-full border-2 border-[#22c55e]/20"
               />
               <div>
-                <div class="text-white font-bold text-sm">Sarah Chen</div>
-                <div class="text-gray-500 text-xs">
+                <div class="text-white font-bold text-lg">Sarah Chen</div>
+                <div class="text-gray-500 text-base">
                   Event Director, TechConf Global
                 </div>
               </div>
@@ -1699,13 +1729,13 @@
           <div
             class="p-8 rounded-2xl bg-black border border-white/10 hover:border-[#22c55e]/30 transition-all duration-300"
           >
-            <div class="flex gap-1 mb-6 text-[#22c55e]">
+            <div class="flex gap-1 mb-6 text-[#07B300]">
               <svg
                 v-for="i in 5"
                 :key="i"
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -1714,7 +1744,7 @@
                 />
               </svg>
             </div>
-            <p class="text-gray-300 mb-8 leading-relaxed">
+            <p class="text-gray-300 text-lg mb-8 leading-relaxed">
               "The analytics dashboard gives us insights we never had before.
               We've increased our ticket sales by 40% since switching."
             </p>
@@ -1725,8 +1755,8 @@
                 class="w-12 h-12 rounded-full border-2 border-[#22c55e]/20"
               />
               <div>
-                <div class="text-white font-bold text-sm">Marcus Johnson</div>
-                <div class="text-gray-500 text-xs">
+                <div class="text-white font-bold text-lg">Marcus Johnson</div>
+                <div class="text-gray-500 text-base">
                   Founder, Music Festival Co
                 </div>
               </div>
@@ -1737,13 +1767,13 @@
           <div
             class="p-8 rounded-2xl bg-black border border-white/10 hover:border-[#22c55e]/30 transition-all duration-300"
           >
-            <div class="flex gap-1 mb-6 text-[#22c55e]">
+            <div class="flex gap-1 mb-6 text-[#07B300]">
               <svg
                 v-for="i in 5"
                 :key="i"
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -1752,7 +1782,7 @@
                 />
               </svg>
             </div>
-            <p class="text-gray-300 mb-8 leading-relaxed">
+            <p class="text-gray-300 text-lg mb-8 leading-relaxed">
               "As a small event organizer, the free tier gives me everything I
               need. The platform is intuitive and powerful."
             </p>
@@ -1763,8 +1793,8 @@
                 class="w-12 h-12 rounded-full border-2 border-[#22c55e]/20"
               />
               <div>
-                <div class="text-white font-bold text-sm">Emily Rodriguez</div>
-                <div class="text-gray-500 text-xs">
+                <div class="text-white font-bold text-lg">Emily Rodriguez</div>
+                <div class="text-gray-500 text-base">
                   Community Manager, Local Meetups
                 </div>
               </div>
@@ -1775,13 +1805,13 @@
           <div
             class="p-8 rounded-2xl bg-black border border-white/10 hover:border-[#22c55e]/30 transition-all duration-300"
           >
-            <div class="flex gap-1 mb-6 text-[#22c55e]">
+            <div class="flex gap-1 mb-6 text-[#07B300]">
               <svg
                 v-for="i in 5"
                 :key="i"
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -1790,7 +1820,7 @@
                 />
               </svg>
             </div>
-            <p class="text-gray-300 mb-8 leading-relaxed">
+            <p class="text-gray-300 text-lg mb-8 leading-relaxed">
               "The customer support is exceptional. They helped us set up a
               complex multi-venue event in just days."
             </p>
@@ -1801,8 +1831,8 @@
                 class="w-12 h-12 rounded-full border-2 border-[#22c55e]/20"
               />
               <div>
-                <div class="text-white font-bold text-sm">David Park</div>
-                <div class="text-gray-500 text-xs">
+                <div class="text-white font-bold text-lg">David Park</div>
+                <div class="text-gray-500 text-base">
                   Operations Lead, Convention Center
                 </div>
               </div>
@@ -1813,13 +1843,13 @@
           <div
             class="p-8 rounded-2xl bg-black border border-white/10 hover:border-[#22c55e]/30 transition-all duration-300"
           >
-            <div class="flex gap-1 mb-6 text-[#22c55e]">
+            <div class="flex gap-1 mb-6 text-[#07B300]">
               <svg
                 v-for="i in 5"
                 :key="i"
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -1828,7 +1858,7 @@
                 />
               </svg>
             </div>
-            <p class="text-gray-300 mb-8 leading-relaxed">
+            <p class="text-gray-300 text-lg mb-8 leading-relaxed">
               "We moved from a legacy system and the migration was seamless.
               EventNest's modern approach is refreshing."
             </p>
@@ -1839,8 +1869,8 @@
                 class="w-12 h-12 rounded-full border-2 border-[#22c55e]/20"
               />
               <div>
-                <div class="text-white font-bold text-sm">Lisa Thompson</div>
-                <div class="text-gray-500 text-xs">CTO, Events Inc</div>
+                <div class="text-white font-bold text-lg">Lisa Thompson</div>
+                <div class="text-gray-500 text-base">CTO, Events Inc</div>
               </div>
             </div>
           </div>
@@ -1849,13 +1879,13 @@
           <div
             class="p-8 rounded-2xl bg-black border border-white/10 hover:border-[#22c55e]/30 transition-all duration-300"
           >
-            <div class="flex gap-1 mb-6 text-[#22c55e]">
+            <div class="flex gap-1 mb-6 text-[#07B300]">
               <svg
                 v-for="i in 5"
                 :key="i"
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -1864,7 +1894,7 @@
                 />
               </svg>
             </div>
-            <p class="text-gray-300 mb-8 leading-relaxed">
+            <p class="text-gray-300 text-lg mb-8 leading-relaxed">
               "The mobile check-in app works flawlessly, even with thousands of
               attendees. A game-changer for our stadium events."
             </p>
@@ -1875,11 +1905,706 @@
                 class="w-12 h-12 rounded-full border-2 border-[#22c55e]/20"
               />
               <div>
-                <div class="text-white font-bold text-sm">James Wilson</div>
-                <div class="text-gray-500 text-xs">
+                <div class="text-white font-bold text-lg">James Wilson</div>
+                <div class="text-gray-500 text-base">
                   Stadium Manager, Metro Arena
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-24 bg-black relative overflow-hidden" id="pricing">
+      <div class="w-full max-w-[1280px] mx-auto px-4">
+        <div class="text-center mb-16 flex flex-col items-center">
+          <span
+            class="text-[#07B300] font-semibold tracking-wider text-sm uppercase mb-4"
+          >
+            Pricing
+          </span>
+          <h2
+            class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
+          >
+            Simple, Transparent <span class="text-[#07B300]">Pricing</span>
+          </h2>
+          <p class="text-gray-400 text-xl max-w-2xl">
+            Choose the plan that fits your needs. No hidden fees, no surprises.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <!-- Starter Plan -->
+          <div
+            class="p-8 rounded-3xl bg-[#0A0A0A] border border-white/5 flex flex-col items-center text-center group hover:border-white/10 transition-all duration-300"
+          >
+            <h3 class="text-2xl font-bold text-white mb-2">Starter</h3>
+            <p class="text-gray-500 text-sm mb-8">
+              Perfect for small events and getting started.
+            </p>
+            <div class="flex items-baseline gap-1 mb-10">
+              <span class="text-4xl font-bold text-white">Free</span>
+              <span class="text-gray-500">/forever</span>
+            </div>
+            <ul class="w-full space-y-4 mb-10 text-left">
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Up to 100 attendees per event
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Basic ticketing
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Email notifications
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Standard support
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Basic analytics
+              </li>
+            </ul>
+            <button
+              class="w-full py-4 rounded-xl border border-white/10 text-white font-semibold hover:bg-white/5 transition-all mt-auto"
+            >
+              Get Started
+            </button>
+          </div>
+
+          <!-- Professional Plan (Featured) -->
+          <div
+            class="p-8 rounded-3xl bg-[#0A0A0A] border-2 border-[#07B300] flex flex-col items-center text-center relative shadow-[0_0_40px_-15px_rgba(7,179,0,0.3)] group"
+          >
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-[#07B300] text-black text-sm font-bold flex items-center gap-1.5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="m12 15-3.03 2.02 1.09-3.39L7.24 11.5l3.47-.07L12 8l1.29 3.43 3.47.07-2.82 2.13 1.09 3.39z"
+                />
+              </svg>
+              Most Popular
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2 mt-4">
+              Professional
+            </h3>
+            <p class="text-gray-500 text-sm mb-8">
+              For growing organizers with regular events.
+            </p>
+            <div class="flex items-baseline gap-1 mb-10">
+              <span class="text-4xl font-bold text-white">$29</span>
+              <span class="text-gray-500">/per event</span>
+            </div>
+            <ul class="w-full space-y-4 mb-10 text-left">
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Up to 1,000 attendees per event
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Advanced ticketing options
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Custom branding
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Priority support
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Advanced analytics
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Promo codes & discounts
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Waitlist management
+              </li>
+            </ul>
+            <button
+              class="w-full py-4 rounded-xl bg-[#07B300] text-black font-bold hover:bg-[#16a34a] transition-all mt-auto"
+            >
+              Start Free Trial
+            </button>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div
+            class="p-8 rounded-3xl bg-[#0A0A0A] border border-white/5 flex flex-col items-center text-center group hover:border-white/10 transition-all duration-300"
+          >
+            <h3 class="text-2xl font-bold text-white mb-2">Enterprise</h3>
+            <p class="text-gray-500 text-sm mb-8">
+              For large-scale events and organizations.
+            </p>
+            <div class="flex items-baseline gap-1 mb-10">
+              <span class="text-4xl font-bold text-white">Custom</span>
+              <span class="text-gray-500">/contact us</span>
+            </div>
+            <ul class="w-full space-y-4 mb-10 text-left">
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Unlimited attendees
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                White-label solution
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Dedicated account manager
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                24/7 phone support
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Custom integrations
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                SLA guarantee
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                On-site support available
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#07B300"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                Multi-event management
+              </li>
+            </ul>
+            <button
+              class="w-full py-4 rounded-xl border border-white/10 text-white font-semibold hover:bg-white/5 transition-all mt-auto"
+            >
+              Contact Sales
+            </button>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <p class="text-gray-500">
+            Have questions?
+            <a href="#faq" class="text-[#07B300] hover:underline font-medium"
+              >Check our FAQ</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-black relative" id="faq">
+      <div class="w-full max-w-[1280px] mx-auto px-4">
+        <div class="mb-16 text-left">
+          <span
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#07B300]/10 border border-[#07B300]/20 text-[#07B300] text-sm font-medium mb-6"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+              <path d="M12 17h.01" />
+            </svg>
+            FAQ
+          </span>
+          <h2 class="text-3xl md:text-6xl font-bold text-white mb-6">
+            Frequently Asked <span class="text-[#07B300]">Questions</span>
+          </h2>
+          <p class="text-gray-400 text-lg md:text-xl max-w-3xl mb-4">
+            Everything you need to know about EventNest. Can't find what you're
+            looking for? Contact our support team.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center gap-2 text-[#07B300] font-semibold hover:underline group"
+          >
+            Contact Support
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+            >
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div
+          class="w-full border border-white/5 rounded-2xl bg-[#050505]/50 backdrop-blur-sm overflow-hidden"
+        >
+          <div
+            v-for="(item, index) in faqData"
+            :key="index"
+            class="border-b border-white/5 last:border-0"
+          >
+            <button
+              @click="toggleFaq(index)"
+              class="w-full flex items-center justify-between p-6 md:p-8 text-left hover:bg-white/[0.02] transition-all group"
+            >
+              <span
+                class="text-lg md:text-xl font-medium transition-colors pr-8"
+                :class="
+                  activeIndex === index
+                    ? 'text-[#07B300]'
+                    : 'text-white group-hover:text-[#07B300]'
+                "
+              >
+                {{ item.question }}
+              </span>
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full border border-white/10 flex items-center justify-center transition-all duration-300 bg-white/5"
+                :class="{
+                  'rotate-180 bg-white/10 border-white/20':
+                    activeIndex === index,
+                }"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  :class="
+                    activeIndex === index ? 'text-white' : 'text-[#07B300]'
+                  "
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </div>
+            </button>
+            <div
+              v-if="activeIndex === index"
+              class="px-6 md:px-8 pb-8 animate-fade-in"
+            >
+              <p class="text-gray-400 text-lg leading-relaxed max-w-4xl">
+                {{ item.answer }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-24 bg-black relative overflow-hidden">
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#07B300]/10 rounded-full blur-[120px] pointer-events-none"
+      ></div>
+
+      <div class="w-full max-w-[1280px] mx-auto px-4 relative z-10">
+        <div class="flex flex-col items-center text-center">
+          <!-- Badge -->
+          <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#07B300]/10 border border-[#07B300]/20 text-[#07B300] text-sm font-medium mb-8"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+              <path d="M3 6h18" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+            Start for Free
+          </div>
+
+          <!-- Headline -->
+          <h2
+            class="text-4xl md:text-7xl font-bold text-white mb-8 leading-[1.1]"
+          >
+            Ready to Create <br />
+            Your <span class="text-[#07B300]">Next Event?</span>
+          </h2>
+
+          <!-- Description -->
+          <p class="text-gray-400 text-lg md:text-xl max-w-2xl mb-12">
+            Join thousands of organizers who use EventNest to create
+            unforgettable experiences. Get started in minutes, no credit card
+            required.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 mb-16">
+            <button
+              class="px-8 py-4 rounded-xl bg-[#07B300] hover:bg-[#16a34a] text-black font-bold flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_-5px_rgba(7,179,0,0.4)]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                <line x1="16" x2="16" y1="2" y2="6" />
+                <line x1="8" x2="8" y1="2" y2="6" />
+                <line x1="3" x2="21" y1="10" y2="10" />
+              </svg>
+              Create Your First Event
+            </button>
+            <button
+              class="px-8 py-4 rounded-xl border border-white/10 text-white font-semibold hover:bg-white/5 transition-all flex items-center justify-center gap-2"
+            >
+              Explore Events
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="flex flex-wrap justify-center gap-8 md:gap-12">
+            <div class="flex items-center gap-2 text-gray-500 text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#07B300"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              SSL Secured
+            </div>
+            <div class="flex items-center gap-2 text-gray-500 text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#07B300"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              GDPR Compliant
+            </div>
+            <div class="flex items-center gap-2 text-gray-500 text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#07B300"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 3v18h18" />
+                <path d="M18 17V9" />
+                <path d="M13 17V5" />
+                <path d="M8 17v-3" />
+              </svg>
+              99.9% Uptime
             </div>
           </div>
         </div>
@@ -1890,6 +2615,10 @@
 
 <style>
 /* Custom animations if Tailwind config doesn't cover them */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 @keyframes scroll-dot {
   0% {
     transform: translateY(0);
@@ -1933,12 +2662,37 @@
 .delay-500 {
   animation-delay: 0.5s;
 }
-</style>
 
-<script></script>
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
 
-<style>
-body {
-  font-family: "Inter", sans-serif;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>
+
+<script>
+import faqData from "../data/faq.json";
+
+export default {
+  data() {
+    return {
+      activeIndex: null,
+      faqData,
+    };
+  },
+  methods: {
+    toggleFaq(index) {
+      this.activeIndex = this.activeIndex === index ? null : index;
+    },
+  },
+};
+</script>

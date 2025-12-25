@@ -1,0 +1,30 @@
+[
+  {
+    "question": "How do I create my first event?",
+    "answer": "Creating an event is simple. Just click on the 'Create Event' button, fill in your event details, set up your ticketing options, and you're ready to go! Our intuitive builder will guide you through mỗi step of the process."
+  },
+  {
+    "question": "What payment methods are supported?",
+    "answer": "We support all major credit cards, debit cards, and digital wallets including Apple Pay and Google Pay through our secure Stripe integration. We also support local payment methods in many regions."
+  },
+  {
+    "question": "Can I offer different ticket types?",
+    "answer": "Yes, you can create multiple ticket tiers such as General Admission, VIP, Early Bird, and more. Each ticket type can have its own price, quantity, and availability dates."
+  },
+  {
+    "question": "How does the check-in process work?",
+    "answer": "You can use our mobile app to scan attendee QR codes instantly. It works offline too, so you don't need to worry about internet connectivity at the venue. You can also manually check in guests from your dashboard."
+  },
+  {
+    "question": "What fees does EventNest charge?",
+    "answer": "Our pricing is transparent. We charge a small percentage per ticket sold plus a fixed fee. There are no monthly subscription costs for our standard features, so you only pay when you sell."
+  },
+  {
+    "question": "Can I issue refunds to attendees?",
+    "answer": "Absolutely. You can issue full or partial refunds directly from your event dashboard. The refund will be automatically processed back to the attendee's original payment method."
+  },
+  {
+    "question": "Is there a limit to event capacity?",
+    "answer": "There are no platform-imposed limits on event capacity. Whether you're hosting a small workshop for 10 people or a massive festival for 100,000+, EventNest can handle it seamlessly."
+  }
+]
