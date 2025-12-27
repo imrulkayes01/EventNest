@@ -586,8 +586,6 @@
         </div>
       </div>
     </section>
-
-    <support-chat />
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed bottom-8 right-8 z-[100]">
+  <div class="fixed bottom-6 right-6 z-[100]">
     <!-- Chat Window -->
     <div
       v-if="isOpen"
