@@ -4,7 +4,7 @@
   >
     <!-- Hero Section -->
     <section
-      class="relative max-w-[1280px] mx-auto pt-32 pb-20 px-6 sm:px-10 lg:px-20 flex flex-col items-center text-center overflow-hidden"
+      class="relative max-w-[1280px] mx-auto pt-44 pb-20 px-6 sm:px-10 lg:px-20 flex flex-col items-center text-center overflow-hidden"
     >
       <!-- Background Glows -->
       <div

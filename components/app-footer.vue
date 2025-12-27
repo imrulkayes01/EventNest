@@ -125,31 +125,31 @@
           <h4 class="text-white font-bold mb-6">Product</h4>
           <ul class="space-y-4">
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/#features"
                 class="text-gray-400 hover:text-[#07B300] transition-colors"
-                >Features</a
+                >Features</NuxtLink
               >
             </li>
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/#pricing"
                 class="text-gray-400 hover:text-[#07B300] transition-colors"
-                >Pricing</a
+                >Pricing</NuxtLink
               >
             </li>
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/#how-it-works"
                 class="text-gray-400 hover:text-[#07B300] transition-colors"
-                >How It Works</a
+                >How It Works</NuxtLink
               >
             </li>
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/for-organizers"
                 class="text-gray-400 hover:text-[#07B300] transition-colors"
-                >Enterprise</a
+                >Enterprise</NuxtLink
               >
             </li>
           </ul>
@@ -160,10 +160,10 @@
           <h4 class="text-white font-bold mb-6">Company</h4>
           <ul class="space-y-4">
             <li>
-              <a
-                href="#"
+              <NuxtLink
+                to="/about"
                 class="text-gray-400 hover:text-[#07B300] transition-colors"
-                >About</a
+                >About</NuxtLink
               >
             </li>
             <li>

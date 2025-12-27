@@ -123,7 +123,8 @@
         <div
           class="flex flex-wrap gap-4 justify-center mb-16 animate-fade-in-up delay-400"
         >
-          <button
+          <NuxtLink
+            to="/discover"
             class="bg-[#07B300] hover:bg-[#16a34a] text-black font-bold px-8 py-4 rounded-xl transition-all hover:scale-105 flex items-center gap-2 text-lg"
           >
             Explore Events
@@ -141,8 +142,9 @@
               <path d="M5 12h14" />
               <path d="m12 5 7 7-7 7" />
             </svg>
-          </button>
-          <button
+          </NuxtLink>
+          <NuxtLink
+            to="/for-organizers"
             class="bg-transparent border-2 border-white/10 hover:bg-white/5 text-white font-bold px-8 py-4 rounded-xl transition-all flex items-center gap-3 text-lg"
           >
             <svg
@@ -162,7 +164,7 @@
               <line x1="3" x2="21" y1="10" y2="10" />
             </svg>
             Create Your Event
-          </button>
+          </NuxtLink>
         </div>
 
         <!-- Stats -->
@@ -222,7 +224,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-24 bg-[#0A0A0A] relative">
+    <section class="py-24 bg-[#0A0A0A] relative" id="features">
       <div
         class="w-full max-w-[1280px] mx-auto px-4 text-center flex flex-col items-center"
       >
@@ -892,7 +894,10 @@
     </section>
 
     <!-- How It Works Section -->
-    <section class="py-24 bg-[#0A0A0A] relative overflow-hidden">
+    <section
+      class="py-24 bg-[#0A0A0A] relative overflow-hidden"
+      id="how-it-works"
+    >
       <div
         class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#22c55e]/5 rounded-full blur-[120px] pointer-events-none"
       ></div>

@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "category": "business",
+    "title": "Startup Pitch Night",
+    "date": "Mon, Feb 2",
+    "location": "Innovation Hub SF, California",
+    "time": "1:00 PM",
+    "image": "https://images.unsplash.com/photo-1475721027187-402ad2989a3b?q=80&w=2070&auto=format&fit=crop",
+    "organizer": "Event Squad 36..."
+  },
+  {
+    "id": 2,
+    "category": "workshop",
+    "title": "AI & Machine Learning Workshop",
+    "date": "Thu, Mar 12",
+    "location": "Tech Learning Center, Texas",
+    "time": "10:00 AM",
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop",
+    "organizer": "Event Squad 36..."
+  },
+  {
+    "id": 3,
+    "category": "workshop",
+    "title": "Virtual Marketing Masterclass",
+    "date": "Sun, May 10",
+    "location": "Online",
+    "time": "8:00 PM",
+    "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop",
+    "organizer": "Event Squad 36..."
+  },
+  {
+    "id": 4,
+    "category": "conference",
+    "title": "Tech Summit 2026",
+    "date": "Mon, Jun 15",
+    "location": "Manhattan Convention Center, New York",
+    "time": "4:00 PM",
+    "spots": 500,
+    "image": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop",
+    "organizer": "Event Squad 36..."
+  },
+  {
+    "id": 5,
+    "category": "festival",
+    "title": "Community Food Festival",
+    "date": "Fri, Dec 4",
+    "location": "Central Park South, New York",
+    "time": "9:00 AM",
+    "spots": 250,
+    "image": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2070&auto=format&fit=crop",
+    "organizer": "Event Squad 36..."
+  }
+]
