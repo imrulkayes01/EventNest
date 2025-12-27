@@ -4,7 +4,7 @@
   >
     <!-- Hero Section -->
     <section
-      class="relative pt-32 pb-20 px-6 sm:px-10 lg:px-20 flex flex-col items-center text-center overflow-hidden"
+      class="relative max-w-[1280px] mx-auto pt-32 pb-20 px-6 sm:px-10 lg:px-20 flex flex-col items-center text-center overflow-hidden"
     >
       <!-- Background Glows -->
       <div
@@ -18,7 +18,7 @@
         class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-sm font-semibold mb-8 animate-fade-in"
       >
         <div
-          class="w-2 h-2 rounded-full bg-green-500 transition-shadow shadow-[0_0_10px_#22c55e]"
+          class="w-2 h-2 rounded-full bg-[#07B300] transition-shadow shadow-[#07B300]"
         ></div>
         About EventNest
       </div>
@@ -27,7 +27,7 @@
         class="text-5xl md:text-6xl font-bold max-w-5xl leading-[1.1] mb-8 tracking-tight"
       >
         Connecting People Through <br class="hidden md:block" />
-        <span class="text-green-500">Remarkable Experiences</span>
+        <span class="text-[#07B300]">Remarkable Experiences</span>
       </h1>
 
       <p
@@ -90,12 +90,12 @@
       >
         <div class="space-y-6">
           <span
-            class="text-green-500 font-bold tracking-[0.2em] text-xs uppercase"
+            class="text-[#07B300] font-bold tracking-[0.2em] text-xs uppercase"
             >Our Mission</span
           >
           <h2 class="text-4xl md:text-6xl font-bold leading-tight">
             Making Event Management <br />
-            <span class="text-green-500">Simple and Powerful</span>
+            <span class="text-[#07B300]">Simple and Powerful</span>
           </h2>
           <div
             class="space-y-6 text-gray-400 text-lg md:text-xl leading-relaxed"
@@ -270,13 +270,13 @@
     <section class="py-24 px-6 sm:px-10 lg:px-20 bg-[#080808]">
       <div class="max-w-7xl mx-auto text-center mb-20">
         <span
-          class="text-green-500 font-bold tracking-[0.2em] text-xs uppercase mb-4 block"
+          class="text-[#07B300] font-bold tracking-[0.2em] text-xs uppercase mb-4 block"
           >Our Values</span
         >
         <h2 class="text-4xl md:text-6xl font-bold mb-6">
-          What Drives Us <span class="text-green-500">Every Day</span>
+          What Drives Us <span class="text-[#07B300]">Every Day</span>
         </h2>
-        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
+        <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto">
           These core values guide every decision we make and shape the platform
           we build.
         </p>
@@ -307,7 +307,7 @@
             </svg>
           </div>
           <h3
-            class="text-2xl font-bold mb-4 group-hover:text-green-400 transition-colors"
+            class="text-2xl font-bold mb-4 group-hover:text-[#07B300] transition-colors"
           >
             Purpose-Driven
           </h3>
@@ -339,7 +339,7 @@
             </svg>
           </div>
           <h3
-            class="text-2xl font-bold mb-4 group-hover:text-green-400 transition-colors"
+            class="text-2xl font-bold mb-4 group-hover:text-[#07B300] transition-colors"
           >
             Community First
           </h3>
@@ -371,7 +371,7 @@
             </svg>
           </div>
           <h3
-            class="text-2xl font-bold mb-4 group-hover:text-green-400 transition-colors"
+            class="text-2xl font-bold mb-4 group-hover:text-[#07B300] transition-colors"
           >
             Trust & Security
           </h3>
@@ -403,7 +403,7 @@
             </svg>
           </div>
           <h3
-            class="text-2xl font-bold mb-4 group-hover:text-green-400 transition-colors"
+            class="text-2xl font-bold mb-4 group-hover:text-[#07B300] transition-colors"
           >
             Innovation
           </h3>
@@ -435,7 +435,7 @@
             </svg>
           </div>
           <h3
-            class="text-2xl font-bold mb-4 group-hover:text-green-400 transition-colors"
+            class="text-2xl font-bold mb-4 group-hover:text-[#07B300] transition-colors"
           >
             Passion
           </h3>
@@ -473,7 +473,7 @@
             </svg>
           </div>
           <h3
-            class="text-2xl font-bold mb-4 group-hover:text-green-400 transition-colors"
+            class="text-2xl font-bold mb-4 group-hover:text-[#07B300] transition-colors"
           >
             Accessibility
           </h3>
@@ -489,11 +489,11 @@
     <section class="max-w-7xl mx-auto py-24 px-6 sm:px-10 lg:px-20 text-center">
       <div class="max-w-4xl mx-auto">
         <span
-          class="text-green-500 font-bold tracking-[0.2em] text-xs uppercase mb-4 block"
+          class="text-[#07B300] font-bold tracking-[0.2em] text-xs uppercase mb-4 block"
           >Our Story</span
         >
         <h2 class="text-4xl md:text-6xl font-bold mb-16">
-          From Frustration to <span class="text-green-500">Innovation</span>
+          From Frustration to <span class="text-[#07B300]">Innovation</span>
         </h2>
 
         <div
@@ -541,7 +541,7 @@
       >
         <h2 class="text-4xl md:text-6xl font-bold mb-8">
           Ready to Create Your <br />
-          <span class="text-green-500 italic">Next Event?</span>
+          <span class="text-[#07B300] italic">Next Event?</span>
         </h2>
         <p
           class="text-gray-400 text-xl md:text-2xl mb-12 max-w-2xl mx-auto leading-relaxed font-sm"
