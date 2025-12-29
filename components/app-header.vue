@@ -25,36 +25,43 @@
         <NuxtLink
           to="/discover"
           class="hover:text-[#07B300] transition cursor-pointer"
+          exact-active-class="text-[#07B300]"
           >Discover</NuxtLink
         >
         <NuxtLink
           to="/validate-ticket"
           class="hover:text-[#07B300] transition cursor-pointer"
+          exact-active-class="text-[#07B300]"
         >
           Validate Ticket
         </NuxtLink>
         <NuxtLink
           to="/for-organizers"
           class="hover:text-[#07B300] transition cursor-pointer"
+          exact-active-class="text-[#07B300]"
         >
           For Organizers
         </NuxtLink>
         <NuxtLink
           to="/about"
           class="hover:text-[#07B300] transition cursor-pointer"
+          exact-active-class="text-[#07B300]"
           >About</NuxtLink
         >
         <NuxtLink
           to="/#how-it-works"
           class="hover:text-[#07B300] transition cursor-pointer"
+          :class="{ 'text-[#07B300]': route.hash === '#how-it-works' }"
         >
           How It Works
         </NuxtLink>
         <NuxtLink
           to="/#pricing"
           class="hover:text-[#07B300] transition cursor-pointer"
-          >Pricing</NuxtLink
+          :class="{ 'text-[#07B300]': route.hash === '#pricing' }"
         >
+          Pricing
+        </NuxtLink>
       </ul>
 
       <div class="hidden lg:flex items-center gap-4">
@@ -98,7 +105,7 @@
   >
     <button
       @click="isMenuOpen = false"
-      class="absolute top-6 right-5 p-1 rounded-xl border-2 border-[#22c55e] text-gray-300 hover:text-white hover:bg-[#22c55e]/10 transition"
+      class="absolute top-6 right-5 p-1 rounded-xl border-2 border-[#07B300] text-gray-300 hover:text-white hover:bg-[#07B300]/10 transition"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -120,42 +127,48 @@
     <ul class="flex flex-col items-center gap-6 text-xl text-gray-300">
       <NuxtLink
         to="/discover"
-        class="hover:text-[#22c55e] cursor-pointer"
+        class="hover:text-[#07B300] cursor-pointer"
+        exact-active-class="text-[#07B300]"
         @click="isMenuOpen = false"
       >
         Discover
       </NuxtLink>
       <NuxtLink
         to="/validate-ticket"
-        class="hover:text-[#22c55e] cursor-pointer"
+        class="hover:text-[#07B300] cursor-pointer"
+        exact-active-class="text-[#07B300]"
         @click="isMenuOpen = false"
       >
         Validate Ticket
       </NuxtLink>
       <NuxtLink
         to="/for-organizers"
-        class="hover:text-[#22c55e] cursor-pointer"
+        class="hover:text-[#07B300] cursor-pointer"
+        exact-active-class="text-[#07B300]"
         @click="isMenuOpen = false"
       >
         For Organizers
       </NuxtLink>
       <NuxtLink
         to="/about"
-        class="hover:text-[#22c55e] cursor-pointer"
+        class="hover:text-[#07B300] cursor-pointer"
+        exact-active-class="text-[#07B300]"
         @click="isMenuOpen = false"
       >
         About
       </NuxtLink>
       <NuxtLink
         to="/#how-it-works"
-        class="hover:text-[#22c55e] cursor-pointer"
+        class="hover:text-[#07B300] cursor-pointer"
+        :class="{ 'text-[#07B300]': route.hash === '#how-it-works' }"
         @click="isMenuOpen = false"
       >
         How It Works
       </NuxtLink>
       <NuxtLink
         to="/#pricing"
-        class="hover:text-[#22c55e] cursor-pointer"
+        class="hover:text-[#07B300] cursor-pointer"
+        :class="{ 'text-[#07B300]': route.hash === '#pricing' }"
         @click="isMenuOpen = false"
       >
         Pricing
@@ -163,13 +176,13 @@
     </ul>
     <div class="flex flex-col items-center gap-4 w-full px-10">
       <button
-        class="w-full bg-[#22c55e]/10 hover:bg-[#22c55e]/20 text-white transition px-8 py-3 rounded-[0.50rem] font-bold text-lg"
+        class="w-full bg-[#07B300]/10 hover:bg-[#07B300]/20 text-white transition px-8 py-3 rounded-[0.50rem] font-bold text-lg"
         @click="isMenuOpen = false"
       >
         Log In
       </button>
       <button
-        class="w-full bg-[#22c55e] hover:bg-[#16a34a] transition px-8 py-3 rounded-[0.50rem] text-black font-bold text-lg"
+        class="w-full bg-[#07B300] hover:bg-[#16a34a] transition px-8 py-3 rounded-[0.50rem] text-black font-bold text-lg"
         @click="isMenuOpen = false"
       >
         Get Started
@@ -182,6 +195,8 @@
 
 <script setup>
 import { ref } from "vue";
+import { useRoute } from "vue-router";
 
 const isMenuOpen = ref(false);
+const route = useRoute();
 </script>
