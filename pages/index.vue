@@ -2030,11 +2030,12 @@
                 Basic analytics
               </li>
             </ul>
-            <button
-              class="w-full py-4 rounded-xl border border-white/10 text-white font-semibold hover:bg-white/5 transition-all mt-auto"
+            <NuxtLink
+              to="/signup"
+              class="w-full py-4 rounded-xl border border-white/10 text-white font-semibold hover:bg-white/5 transition-all mt-auto flex justify-center items-center"
             >
               Get Started
-            </button>
+            </NuxtLink>
           </div>
 
           <!-- Professional Plan (Featured) -->
@@ -2511,7 +2512,8 @@
 
           <!-- Action Buttons -->
           <div class="flex flex-col sm:flex-row gap-4 mb-16">
-            <button
+            <NuxtLink
+              to="/signup"
               class="px-8 py-4 rounded-xl bg-[#07B300] hover:bg-[#16a34a] text-black font-bold flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_-5px_rgba(7,179,0,0.4)]"
             >
               <svg
@@ -2531,7 +2533,7 @@
                 <line x1="3" x2="21" y1="10" y2="10" />
               </svg>
               Create Your First Event
-            </button>
+            </NuxtLink>
             <button
               class="px-8 py-4 rounded-xl border border-white/10 text-white font-semibold hover:bg-white/5 transition-all flex items-center justify-center gap-2"
             >

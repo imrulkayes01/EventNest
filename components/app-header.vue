@@ -70,11 +70,12 @@
         >
           Log In
         </button>
-        <button
+        <NuxtLink
+          to="/signup"
           class="bg-[#07B300] hover:bg-[#16a34a] transition px-5 py-2.5 text-black rounded-[0.50rem] font-bold text-lg"
         >
           Get Started
-        </button>
+        </NuxtLink>
       </div>
 
       <button @click="isMenuOpen = !isMenuOpen" class="lg:hidden text-white">
@@ -181,12 +182,13 @@
       >
         Log In
       </button>
-      <button
-        class="w-full bg-[#07B300] hover:bg-[#16a34a] transition px-8 py-3 rounded-[0.50rem] text-black font-bold text-lg"
+      <NuxtLink
+        to="/signup"
+        class="w-full bg-[#07B300] hover:bg-[#16a34a] transition px-8 py-3 rounded-[0.50rem] text-black font-bold text-lg text-center"
         @click="isMenuOpen = false"
       >
         Get Started
-      </button>
+      </NuxtLink>
     </div>
   </div>
 </template>
