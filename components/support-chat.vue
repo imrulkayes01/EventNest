@@ -1,16 +1,18 @@
 <template>
-  <div class="fixed bottom-6 right-6 z-[100]">
+  <div
+    class="fixed bottom-6 right-6 z-[100] max-sm:right-4 max-sm:left-4 max-sm:bottom-4 flex flex-col items-end"
+  >
     <!-- Chat Window -->
     <div
       v-if="isOpen"
-      class="mb-4 w-[380px] h-[500px] bg-[#0A0A0A] border border-white/10 rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-fade-in"
+      class="mb-4 w-[380px] h-[500px] max-sm:w-full max-sm:h-[calc(100vh-120px)] max-sm:max-h-[500px] bg-[#0A0A0A] border border-white/10 rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-fade-in"
     >
       <!-- Header -->
       <div
         class="p-4 bg-white/5 border-b border-white/10 flex items-center justify-between"
       >
-        <div class="flex items-center gap-3">
-          <div class="relative">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="relative shrink-0">
             <div
               class="w-10 h-10 rounded-full bg-[#07B300] flex items-center justify-center text-black"
             >
@@ -34,9 +36,9 @@
               class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-[#07B300] border-2 border-[#0A0A0A] rounded-full"
             ></div>
           </div>
-          <div>
-            <h3 class="font-bold text-white text-sm">Support</h3>
-            <p class="text-xs text-gray-500">Connecting...</p>
+          <div class="min-w-0">
+            <h3 class="font-bold text-white text-sm truncate">Support</h3>
+            <p class="text-xs text-gray-500 truncate">Connecting...</p>
           </div>
         </div>
         <div class="flex items-center gap-2">
