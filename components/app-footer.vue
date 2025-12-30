@@ -35,7 +35,9 @@
           </p>
           <div class="flex gap-4">
             <a
-              href="#"
+              href="https://x.com/imrulkayes_01"
+              target="_blank"
+              rel="noopener noreferrer"
               class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-[#07B300] hover:text-black transition-all"
             >
               <svg
@@ -55,7 +57,9 @@
               </svg>
             </a>
             <a
-              href="#"
+              href="https://github.com/imrulkayes01"
+              target="_blank"
+              rel="noopener noreferrer"
               class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-[#07B300] hover:text-black transition-all"
             >
               <svg
@@ -76,7 +80,9 @@
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/imrul-kayes-394aa92b5/"
+              target="_blank"
+              rel="noopener noreferrer"
               class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-[#07B300] hover:text-black transition-all"
             >
               <svg
@@ -98,7 +104,9 @@
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/imrulkayes_01/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
               class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-[#07B300] hover:text-black transition-all"
             >
               <svg
