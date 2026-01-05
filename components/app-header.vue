@@ -65,11 +65,12 @@
       </ul>
 
       <div class="hidden lg:flex items-center gap-4">
-        <button
+        <NuxtLink
+          to="/login"
           class="bg-[#22c55e]/10 hover:bg-[#22c55e]/20 text-white transition px-5 py-2.5 rounded-[0.50rem] font-bold text-lg"
         >
           Log In
-        </button>
+        </NuxtLink>
         <NuxtLink
           to="/signup"
           class="bg-[#07B300] hover:bg-[#16a34a] transition px-5 py-2.5 text-black rounded-[0.50rem] font-bold text-lg"
@@ -176,12 +177,13 @@
       </NuxtLink>
     </ul>
     <div class="flex flex-col items-center gap-4 w-full px-10">
-      <button
-        class="w-full bg-[#07B300]/10 hover:bg-[#07B300]/20 text-white transition px-8 py-3 rounded-[0.50rem] font-bold text-lg"
+      <NuxtLink
+        to="/login"
+        class="w-full bg-[#07B300]/10 hover:bg-[#07B300]/20 text-white transition px-8 py-3 rounded-[0.50rem] font-bold text-lg text-center"
         @click="isMenuOpen = false"
       >
         Log In
-      </button>
+      </NuxtLink>
       <NuxtLink
         to="/signup"
         class="w-full bg-[#07B300] hover:bg-[#16a34a] transition px-8 py-3 rounded-[0.50rem] text-black font-bold text-lg text-center"
