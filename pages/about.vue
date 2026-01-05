@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-[#050505] text-white min-h-screen font-sans selection:bg-green-500/30 selection:text-green-400"
+    class="bg-black text-white min-h-screen font-sans selection:bg-green-500/30 selection:text-green-400"
   >
     <!-- Hero Section -->
     <section
@@ -267,7 +267,7 @@
     </section>
 
     <!-- Values Section -->
-    <section class="py-24 px-6 sm:px-10 lg:px-20 bg-[#080808]">
+    <section class="py-24 px-6 sm:px-10 lg:px-20 bg-[#0A0A0A]">
       <div class="max-w-7xl mx-auto text-center mb-20">
         <span
           class="text-[#07B300] font-bold tracking-[0.2em] text-xs uppercase mb-4 block"

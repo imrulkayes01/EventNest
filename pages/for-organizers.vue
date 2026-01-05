@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen bg-[#050505] text-white flex-col items-center justify-center pt-24 pb-20 overflow-hidden font-sans"
+    class="min-h-screen bg-black text-white flex-col items-center justify-center pt-24 pb-20 overflow-hidden font-sans"
   >
     <!-- Content -->
     <section

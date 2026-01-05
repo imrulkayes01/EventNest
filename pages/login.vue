@@ -4,7 +4,7 @@
   >
     <!-- Left Side: Branding & Testimonial -->
     <div
-      class="hidden md:flex md:w-1/2 lg:w-2/5 p-12 flex-col justify-between relative overflow-hidden bg-[#050505]"
+      class="hidden md:flex md:w-1/2 lg:w-2/5 p-12 flex-col justify-between relative overflow-hidden bg-[#0A0A0A]"
     >
       <!-- Background Gradient Effect -->
       <div
