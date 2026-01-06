@@ -71,9 +71,11 @@
               <path d="m21 21-4.3-4.3" />
             </svg>
             <input
+              v-model="searchQuery"
               type="text"
               placeholder="Search events, concerts, conferences..."
               class="bg-transparent w-full text-white placeholder-white/30 focus:outline-none font-medium"
+              @keyup.enter="handleSearch"
             />
           </div>
           <div class="flex-1 flex items-center px-4 h-14">
@@ -93,12 +95,15 @@
               <circle cx="12" cy="10" r="3" />
             </svg>
             <input
+              v-model="searchLocation"
               type="text"
               placeholder="Location"
               class="bg-transparent w-full text-white placeholder-white/30 focus:outline-none font-medium"
+              @keyup.enter="handleSearch"
             />
           </div>
           <button
+            @click="handleSearch"
             class="bg-[#07B300] hover:bg-[#16a34a] text-black font-bold px-8 py-3 rounded-xl transition-colors h-14 md:h-auto flex items-center justify-center gap-2"
           >
             <svg
@@ -2696,6 +2701,8 @@ export default {
       selectedIntegrationIndex: 0,
       faqData,
       integrations: integrationsData,
+      searchQuery: "",
+      searchLocation: "",
     };
   },
   computed: {
@@ -2706,6 +2713,24 @@ export default {
   methods: {
     toggleFaq(index) {
       this.activeIndex = this.activeIndex === index ? null : index;
+    },
+    handleSearch() {
+      // Build query parameters
+      const params = new URLSearchParams();
+
+      if (this.searchQuery.trim()) {
+        params.append("q", this.searchQuery.trim());
+      }
+
+      if (this.searchLocation.trim()) {
+        params.append("location", this.searchLocation.trim());
+      }
+
+      // Navigate to discover page with search parameters
+      const queryString = params.toString();
+      const url = queryString ? `/discover?${queryString}` : "/discover";
+
+      this.$router.push(url);
     },
   },
 };
